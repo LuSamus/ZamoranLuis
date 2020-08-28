@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>La Brocha Gorda</title>
+</head>
+<body>
+	<fieldset>
+		<form>
+			Metros cuadrados: <input type="text" id="m2" placeholder="m2"/> <br><br>
+			Precio por metro cuadrado: <input type="text" value="$200" readonly/><br><br>
+			<input type="button" id="boton" value="calcular"/>
+	</fieldset>
+		</form>
+
+	<script>
+		document.getElementById("boton").onclick=calculo;
+		function calculo()
+		{
+		var m2 = document.getElementById("m2").value;
+		var Cobroxm2 = 200;
+		var Pago = (m2 * Cobroxm2);
+		document.write("El cobro por: "+ m2 + " metros cuadrados es de: "+ Pago + " pesos");
+		}
+	</script>
+</body>
+</html>

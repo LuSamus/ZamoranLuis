@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Codigos en JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="cascadaMG.css">
+</head>
+<body>
+	<table width="100%" border="1">
+		<tr>
+			<td width="15%"></td>
+			<td width="70%">
+				<h2 id="Head">Codificacion en JS</h2><br>
+				<h4 style="font-style: italic; color: red;">Problemas funcionales</h4>
+				<a href="PrimerParcial.html"><h3 align="right">Regresar</h3></a>
+			</td>
+			<td width="15%"></td>
+		</tr>
+
+		<tr>
+			<td width="15%"></td>
+			<td width="70%">
+					<header>
+								Una empresa importadora desea determinar cuántos dólares puede adquirir con equis cantidad de dinero mexicano. 
+							</header>
+							<article class="algor">
+								var peso = prompt("Introduce la cantidad en pesos");<br>
+								var dolar = 22.38;<br>
+								var conversion = 0;<br>
+								conversion = (peso/dolar);<br>
+								alert("La conversion de: "+ peso + " pesos a d
+							</article>
+							<footer class="otroF">
+								<form action="PesoDolar.html" target="_blank">
+   									<input type="submit" value="Pruebalo" />
+								</form>
+							</footer>
+			</td>
+			<td width="15%"></td>
+		</tr>
+
+		<tr>
+			<td width="15%"></td>
+			<td width="70%">
+				<header>
+					Pinturas “La brocha gorda” requiere determinar cuánto cobrar por trabajos de pintura.Considere que se cobra por m2.
+				</header>
+				<article class="algor">
+					var m2 = prompt("Teclee los metros cuadrados");<br>
+					var Cobroxm2 = 200;<br>
+					var Pago = 0;<br>
+					Pago = (m2 * Cobroxm2);<br>
+					alert("El cobro por: "+ m2 + " metros cuadrados es de: "+ Pago);
+				</article>
+				<footer class="otroF">
+					<form action="BrochaGorda.html.html" target="_blank">
+   						<input type="submit" value="Pruebalo" />
+					</form>
+				</footer>
+			</td>
+			<td width="15%"></td>
+		</tr>
+
+		<tr>
+			<td width="15%"></td>
+			<td width="70%">
+				<header>
+					Un estacionamiento requiere determinar el cobro que debe aplicar a las personas que lo utilizan. Considere que el cobro es con base en las horas que lo disponen y que las fracciones de hora se toman como completas.
+				</header>
+				<article class="algor">
+						var Tiempo = prompt("Teclee el tiempo que se quedo");<br>
+						var PrecioxHora = 20;<br>
+						var Pago = 0;<br>
+						Pago = (Tiempo * PrecioxHora);<br>
+						alert("El total a pagar por: "+ Tiempo + " Horas es de: "+ Pago);<br>
+				</article>
+				<footer class="otroF">
+					<form action="estacionamiento.html" target="_blank">
+   						<input type="submit" value="Pruebalo" />
+					</form>
+				</footer>
+			</td>
+			<td width="15%"></td>
+		</tr>
+
+		<tr>
+			<td width="15%"></td>
+			<td width="70%">
+				<header>
+					Realice un algoritmo para determinar si una persona puede votar con base en su edad en las próximas elecciones.
+				</header>
+				<article class="algor">
+						var Edad = prompt("Escriba su edad");<br>
+						if (Edad>=18)<br>
+						{<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;alert("Usted ya puede votar");<br>
+						}<br>
+						else<br>
+						{<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;alert("Usted aun no puede votar");<br>
+						}
+				</article>
+				<footer class="otroF">
+					<form action="MayorDeEdad.html" target="_blank">
+   						<input type="submit" value="Pruebalo" />
+					</form>
+				</footer>
+			</td>
+			<td width="15%"></td>
+		</tr>
+
+		<tr>
+			<td width="15%"></td>
+			<td width="70%">
+				<header>
+					 Realice un algoritmo para determinar el sueldo semanal de un trabajador con base en las horas trabajadas y el pago por hora, considerando que después de las 40 horas cada hora se considera como excedente y se paga el doble.
+				</header>
+				<article class="algor">
+						var HorasTrabajadas = prompt("¿Cuantas horas trabajó?");<br>
+						var PagoxHora = 400;<br>
+						var HorasXtra, PagoXtra, Pago, Sueldo;<br>
+						if (HorasTrabajadas>40)<br>
+					    &nbsp;&nbsp;{<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;HorasXtra = (HorasTrabajadas-40);<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;PagoXtra = (HorasXtra*PagoxHora);<br>
+					    &nbsp;&nbsp;&nbsp;&nbsp;Pago = (40*PagoxHora);<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;Sueldo = (Pago+PagoXtra);<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;alert("Horas Extra: "+ HorasXtra +" \tPago Extra: "+ PagoXtra + " \tPago Final: "+ Sueldo);<br>
+						&nbsp;&nbsp;}<br>
+					    &nbsp;&nbsp;else<br>
+					    &nbsp;&nbsp;{<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;alert("No se le pagaran horas extra");<br>
+					    &nbsp;&nbsp;&nbsp;&nbsp;Pago = (HorasTrabajadas*PagoxHora);<br>
+					    &nbsp;&nbsp;&nbsp;&nbsp;alert("Pago final: "+ Pago);<br>
+						&nbsp;&nbsp;}
+				</article>
+				<footer class="otroF">
+					<form action="SueldoDeTrabajador.html" target="_blank">
+   						<input type="submit" value="Pruebalo" />
+					</form>
+				</footer>
+			</td>
+			<td width="15%"></td>
+		</tr>
+
+		<tr>
+			<td width="15%"></td>
+			<td width="70%">
+				<header>
+				“El náufrago satisfecho” ofrece hamburguesas sencillas (S), dobles (D) y triples (T), las cuales tienen un costo de $20, $25 y $28 respectivamente. La empresa acepta tarjetas de crédito con un cargo de 5 % sobre la compra.
+				</header>
+				<article class="algor">
+					var q = prompt("Ingrese el numero de hamburguesas");<br>
+					var s = 0;<br>
+					var d = 0;<br>
+					var t = 0;<br>
+					var p = 0;<br>
+					for(var i = 1; i (<)q ; i++)<br>
+					{<br>
+					&nbsp;&nbsp;var h = prompt("¿Que hamburguesa ordeno?")<br>
+					&nbsp;&nbsp;if(h == 'simple')<br>
+					&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;s = (s+20);<br>
+					&nbsp;&nbsp;}<br>
+					&nbsp;&nbsp;else<br>
+					&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;if(h == 'doble')<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d = (d+25);<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;else<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(h == 'triple')<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t = (t+28);<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+					&nbsp;&nbsp;}<br>
+					}<br>
+					p = (s+d+t);<br>
+					alert("Los tipos de pago son: \n\r a. Efectivo \n\r b. Tarjeta de credito");<br>
+					var pago = prompt("Eliga un tipo de pago");<br>
+					if(pago= 'a')<br>
+					{<br>
+					&nbsp;&nbsp;alert("Su total a pagar es: "+ p);<br>
+					}<br>
+					else<br>
+					&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;tt = p+(p*5/100);<br>
+					&nbsp;&nbsp;alert("Su total a pagar es: "+ tt)<br>
+					&nbsp;&nbsp;}
+				</article>
+				<footer class="otroF">
+					<form action="hamburguesa.html" target="_blank">
+   						<input type="submit" value="Pruebalo" />
+					</form>
+				</footer>
+			</td>
+			<td width="15%"></td>
+		</tr>
+
+		<tr>
+			<td width="15%"></td>
+			<td width="70%">
+				<a href="#Head"><h4 align="right">Volver Arriba</h4></a>
+			</td>
+			<td width="15%"></td>
+		</tr>
+
+		<tr>
+			<td colspan="3">
+			<footer>
+				<table width="100%">
+					<tr>
+						<td width="33%" align="center">Culiacán, Sinaloa, México</td>
+						<td width="33%" align="center">26 de Agosto del 2020</td>
+						<td width="33%" align="center">Escrito por Luis Enrique Zamoran Almendra</td>
+					</tr>
+				</table>
+     		</footer>
+     		</td>	
+		</tr>
+	</table>
+</body>
+</html>

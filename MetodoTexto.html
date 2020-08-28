@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Metodos de Texto</title>
+</head>
+<link rel="stylesheet" type="text/css" href="cascadaMG.css">
+<body>
+	<table width="100%" border="1">
+		<tr>
+			<td width="15%"></td>
+			<td width="70%">
+				<h2 id="Head">Metodos textuales</h2>
+				<a href="PrimerParcial.html"><h3 align="right">Regresar</h3></a>
+			</td>
+			<td width="15%"></td>
+		</tr>
+
+		<tr>
+			<td width="15%"></td>
+			<td width="70%">
+				<header>
+					La compañía de autobuses “La curva loca” requiere determinar el costo que tendrá el boleto de un viaje sencillo, esto basado en los kilómetros por recorrer y en el costo por kilómetro. 
+				</header>
+
+				<article class="algor">
+					Inicio<br>
+					Leer km, Costokm<br>
+					Realizar el producto de km*Costokm y guardarlo en Boleto (Boleto=km*Costokm)<br>
+					Escribir el resultado Boleto<br>
+					Fin
+				</article>
+			</td>
+			<td width="15%"></td>
+		</tr>
+
+		<tr>
+			<td width="15%"></td>
+			<td width="70%">
+				<header>
+					Determinar cuánto pagará finalmente una persona por un artículo equis, considerando que tiene un descuento de 20%, y debe pagar 15% de IVA.
+				</header>
+
+				<article class="algor">
+					Inicio<br>
+					Leer Art<br>
+					Inicializar Desc=20% y IVA=15%<br>
+					Realizar Producto de Art*Desc y guardarlo en PrecDesc (PrecDesc=Art*Desc)<br>
+					Realizar el producto de PrecDesc*IVA y guardarlo en PrecFin (PrecFin=PrecDesc*IVA)<br>
+					Escribir el resultado PrecDesc<br>
+					Escribir el resultado PrecFin<br>
+					Fin
+				</article>
+			</td>
+			<td width="15%"></td>
+		</tr>
+
+		<tr>
+			<td width="15%"></td>
+			<td width="70%">
+				<header>
+					Determinar cuánto dinero ahorra una persona en un año si considera que cada semana ahorra 15% de su sueldo (considere cuatro semanas por mes y que no cambia el sueldo).
+				</header>
+				<article class="algor">
+					Inicio<br>
+					Iniciarlizar Sueldo=15000, Ahorro=15%<br>
+					Realizar el producto sueldo*Ahorro y guardarlo en xSem (xSem=sueldo*Ahorro)<br>
+					Realizar el producto xSem*48 y guardarlo en AhoTo (AhoTo=xSem*48)<br>
+					Escribir el resultado AhoTo<br>
+					Fin<br>
+				</article>
+			</td>
+			<td width="15%"></td>
+		</tr>
+
+		<tr>
+			<td width="15%"></td>
+			<td width="70%">
+				<header>
+					 Realice un algoritmo para determinar si una persona puede votar con base en su edad en las próximas elecciones.
+				</header>
+				<article class="algor">
+					Leer Edad<br>
+					Si Edad >= 18 entonces<br>
+					&nbsp;&nbsp;Escribir “Puede votar”<br>
+					SiNo<br>
+					&nbsp;&nbsp;Escribir “No puede votar”<br>
+					FinSi<br>
+					Fin
+				</article>
+			</td>
+			<td width="15%"></td>
+		</tr>
+
+		<tr>
+			<td width="15%"></td>
+			<td width="70%">
+				<header>Realice un algoritmo para determinar el sueldo semanal de un trabajador con base en las horas trabajadas y el pago por hora, considerando que después de las 40 horas cada hora se considera como excedente y se paga el doble.
+				</header>
+				<article class="algor">
+					Inicio<br>
+					Leer Horas, Sueldo<br>
+					Si Horas>40 Entonces<br>
+					&nbsp;&nbsp;Excedente=Horas-40<br>
+					&nbsp;&nbsp;PagaXtra=Excedente*500<br>
+					SiNo<br>
+					&nbsp;&nbsp;Escribir “Todo al 100”<br>
+					FinSi<br>
+					Hacer producto PagaXtra+Sueldo y guardarlo en PagaFinal<br>
+					Escribir PagaFinal<br>
+					Fin
+				</article>
+			</td>
+			<td width="15%"></td>
+		</tr>
+		<tr>
+			<td width="15%"></td>
+			<td width="70%">
+				<header>
+					Algoritmo para determinar el costo y el descuento que tendrá un artículo. Considere que si su precio es mayor o igual a $200 se le aplica un descuento de 15%, y si su precio es mayor a $100 pero menor a $200, el descuento es de 12%, y si es menor a $100, sólo 10%.
+				</header>
+				<article class="algor">
+					Leer Precio<br>
+					Si Precio>=200 Entonces<br>
+					&nbsp;&nbsp;Descuento=Precio*0.15<br>
+					&nbsp;&nbsp;PagoFinal=Descuento-Precio<br>
+					SiNo<br>
+					&nbsp;&nbsp;Si Precio>100 && Precio<200 Entonces<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;Descuento=Precio*0.12<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;PagoFinal=Descuento-Precio<br>
+					&nbsp;&nbsp;SiNo<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Si Precio<100 Entonces<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Descuento=Precio*0.10<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PagoFinal=Descuento-Precio<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SiNo<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Escribir el resultado PagoFinal<br>
+					Fin
+				</article>
+			</td>
+			<td width="15%"></td>
+		</tr>
+
+		<tr>
+			<td width="15%"></td>
+			<td width="70%">
+				<a href="#Head"><h4 align="right">Volver Arriba</h4></a>
+			</td>
+			<td width="15%"></td>
+		</tr>
+
+		<tr>
+			<td colspan="3">
+			<footer>
+				<table width="100%">
+					<tr>
+						<td width="33%" align="center">Culiacán, Sinaloa, México</td>
+						<td width="33%" align="center">26 de Agosto del 2020</td>
+						<td width="33%" align="center">Escrito por Luis Enrique Zamoran Almendra</td>
+					</tr>
+				</table>
+     		</footer>
+     		</td>	
+		</tr>
+	</table>
+</body>
+</html>

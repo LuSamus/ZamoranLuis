@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script type="text/javascript">
+	var HorasTrabajadas = prompt("¿Cuantas horas trabajó?");
+	var PagoxHora = 400;
+	var HorasXtra, PagoXtra, Pago, Sueldo;
+	if (HorasTrabajadas>40)
+        {
+            HorasXtra = (HorasTrabajadas-40);
+            PagoXtra = (HorasXtra*PagoxHora);
+            Pago = (40*PagoxHora);
+            Sueldo = (Pago+PagoXtra);
+            alert("Horas Extra: "+ HorasXtra +" \tPago Extra: "+ PagoXtra + " \tPago Final: "+ Sueldo);
+        }
+        else
+        {
+           alert("No se le pagaran horas extra");
+            Pago = (HorasTrabajadas*PagoxHora);
+            alert("Pago final: "+ Pago);
+        }
+</script>
+<background color="black">
+<body>
+
+</body>
+</html>

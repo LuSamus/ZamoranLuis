@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bono Mensual</title>
+</head>
+<script type="text/javascript">
+	var Antiguedad = prompt("Teclee su tiempo de antiguedad (En años)");
+	var Sueldo = prompt("Teclee su sueldo (En pesos)");
+	var bono;
+	var pago;
+	if(Antiguedad>1)
+	{
+		alert("Usted es acreedor de un bono por antiguedad");
+		if(Antiguedad>=2 && Antiguedad<5)
+		{
+			alert("Usted es acreedor de un bono de 20% de su sueldo");
+			bono = (Sueldo*0.20);
+			pago = (Sueldo+bono);
+			alert("Su pago final sera de: "+ pago);
+		}
+		else
+			{
+				if(Antiguedad>=5)
+				{
+					alert("Usted es acreedor de un bono de 30% de su sueldo");
+					bono = (Sueldo*0.30);
+					pago = (Sueldo+bono);
+					alert("Su pago final sera de: "+ pago);
+				}
+			}
+	}
+	else
+	{
+		alert("Usted no puede ser acreedor de un bono por antiguedad, pero aun puede recibir un bono por sueldo");
+		if(Sueldo<1000)
+		{
+			alert("Usted es acreedor de un bono de 25% de su sueldo");
+			bono = (Sueldo*0.25);
+			pago = (Sueldo+bono);
+			alert("Su pago final sera de: "+ pago);
+		}
+		else
+		{
+			if(Sueldo>1000 && Sueldo<=3500)
+			{
+				alert("Usted es acreedor de un bono de 10% de su sueldo");
+				bono = (Sueldo*0.10);
+				pago = (Sueldo+bono);
+				alert("Su pago final sera de: "+ pago);
+			}
+		}
+	}
+</script>
+<background color="black">
+<body>
+</body>
+</html>
